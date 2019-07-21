@@ -12,7 +12,7 @@ public class WindowHandler {
 		System.setProperty("webdriver.chrome.driver","F:\\selenium-java-3.141.59\\chromedriver.exe"); 
 	  	WebDriver driver =new ChromeDriver();
 	  	driver.get("https://accounts.google.com/signup");
-	  	System.out.println("Before switching driver title is"+driver.getTitle());
+	  	System.out.println("Before switching driver title is "+driver.getTitle());
 	  	String defaultWindow=driver.getWindowHandle();
 	  	System.out.println("Parent window "+defaultWindow);
 	  	driver.findElement(By.xpath("//a[contains(text(),'Privacy')]")).click();
@@ -29,6 +29,7 @@ public class WindowHandler {
 	  		//s=ids.next();
 	  		
 	  	}
+	  	
 	  	//driver.switchTo().window(s);
 	  	//System.out.println(driver.getTitle());
 	  	Thread.sleep(10000);	
