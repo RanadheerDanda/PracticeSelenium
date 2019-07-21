@@ -18,13 +18,13 @@ public class WindowHandler {
 	  	driver.findElement(By.xpath("//a[contains(text(),'Privacy')]")).click();
 	  	Set<String> windows=driver.getWindowHandles();
 	  	Iterator<String> ids=windows.iterator();
-	  	String s=new String();
+	  	String windowId=new String();
 	  	
 	  	while(ids.hasNext()) {
 	  		
-	  		s=ids.next();
-	  		System.out.println(s);
-	  		driver.switchTo().window(s);
+	  		windowId=ids.next();
+	  		System.out.println(windowId);
+	  		driver.switchTo().window(windowId);
 	  		System.out.println("Driver title is "+ driver.getTitle());
 	  		//s=ids.next();
 	  		
