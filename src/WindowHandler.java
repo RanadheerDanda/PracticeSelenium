@@ -33,7 +33,7 @@ public class WindowHandler {
 	  	//driver.switchTo().window(s);
 	  	//System.out.println(driver.getTitle());
 	  	Thread.sleep(10000);
-	  	System.out.println("switching to parent window");
+	  	System.out.println("switching to parent window ....");
 	  	driver.switchTo().window(defaultWindow);
 	  	System.out.println(driver.getTitle());
 	}
