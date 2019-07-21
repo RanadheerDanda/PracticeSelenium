@@ -12,12 +12,13 @@ public class synchroniz {
 
 	public static void main(String[] args) throws InterruptedException {
 // TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "F:\\selenium-java-3.141.59\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","F:\\selenium-java-3.141.59\\chromedriver.exe"); 
 		WebDriver driver = new ChromeDriver();
 // driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get("https://alaskatrips.poweredbygps.com/g/pt/hotels?MDPCID=ALASKA-US.TPS.BRAND.hotels.HOTEL");
-		driver.findElement(By.id("H-destination")).sendKeys("nyc");
-		driver.findElement(By.id("H-destination")).sendKeys(Keys.TAB);
+		driver.findElement(By.name("DestName")).sendKeys("nyc");
+		driver.findElement(By.name("DestName")).sendKeys("nyc");
+		driver.findElement(By.name("DestName")).sendKeys(Keys.TAB);
 		driver.findElement(By.id("H-fromDate")).sendKeys(Keys.ENTER);
 
 		WebDriverWait dt = new WebDriverWait(driver, 20);

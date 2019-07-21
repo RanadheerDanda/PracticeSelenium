@@ -30,15 +30,18 @@ public class AssignmentOnWindows {
 		System.out.println(footerdriver.findElements(By.tagName("a")).size());
 
 		// 3-
-		WebElement coloumndriver = footerdriver.findElement(By.xpath("//table/tbody/tr/td[1]/ul"));
-		System.out.println(coloumndriver.findElements(By.tagName("a")).size());
+		//WebElement coloumndriver = footerdriver.findElement(By.xpath("//table/tbody/tr/td[1]/ul"));
+		List<WebElement> coloumndriver=driver.findElements(By.xpath("//table/tbody/tr/td[1]/ul/li/a"));
+		System.out.println(coloumndriver.size());
 
 		// 4- click on each link in the coloumn and check if the pages are opening-
-		for (int i = 1; i < coloumndriver.findElements(By.tagName("a")).size(); i++) {
+		for (int i = 0; i < coloumndriver.size(); i++) {
 
 			String clickonlinkTab = Keys.chord(Keys.CONTROL, Keys.ENTER);
+			
 
-			coloumndriver.findElements(By.tagName("a")).get(i).sendKeys(clickonlinkTab);
+			//coloumndriver.findElements(By.tagName("a")).get(i).sendKeys(clickonlinkTab);
+			coloumndriver.get(i).sendKeys(clickonlinkTab);
 			Thread.sleep(5000L);
 
 		} // opens all the tabs
