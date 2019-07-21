@@ -40,7 +40,7 @@ public class AssignmentOnWindows {
 			String clickonlinkTab = Keys.chord(Keys.CONTROL, Keys.ENTER);
 			
 
-			//coloumndriver.findElements(By.tagName("a")).get(i).sendKeys(clickonlinkTab);
+			//  coloumndriver.findElements(By.tagName("a")).get(i).sendKeys(clickonlinkTab);
 			coloumndriver.get(i).sendKeys(clickonlinkTab);
 			Thread.sleep(5000L);
 
