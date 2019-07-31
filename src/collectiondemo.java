@@ -1,7 +1,4 @@
-import java.sql.Driver;
 import java.util.ArrayList;
-
-import org.openqa.selenium.TakesScreenshot;
 
 public class collectiondemo {
 	public static void main(String[] args) { // TODO Auto-generated method stub

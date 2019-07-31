@@ -1,5 +1,3 @@
-import javax.print.attribute.standard.Destination;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
